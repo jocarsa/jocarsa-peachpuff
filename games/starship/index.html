@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="estilo/estilo.css">
+  </head>
+  <body>
+    <canvas id="lienzoestrellas"></canvas>
+    <div id="inicio">
+      <h1>Starship</h1>
+      <p>W = Thrust<br>A = Left<br>D = Right<br>Space = Fire</p>
+      <input type="text" id="usuario" placeholder="username"><br>
+      <select id="color">
+        <option value="#ffffff">Select your team</option>
+        <option value="#0000ff">Blue</option>
+        <option value="#ff0000">Red</option>
+        <option value="#00ff00">Green</option>
+        <option value="#ffa500">Orange</option>
+        <option value="#ffff00">Yellow</option>
+        <option value="#ff00ff">Magenta</option>
+        <option value="#00ffff">Cyan</option>
+      </select>
+      <br>
+      <button id="enviar">Enter</button>
+    </div>
+    <canvas id="lienzo"></canvas>
+    <div id="jugadores" style="position: absolute; top: 10px; left: 10px;"></div>
+    
+    <script src="clases/Nave.js"></script>
+    <script src="clases/Proyectil.js"></script>
+    <script src="funciones/funciones.js"></script>
+    <script src="funciones/controles.js"></script>
+    <script src="funciones/colisiones.js"></script>
+    <script src="js/condicionesiniciales.js"></script>
+    <!-- Removed the old websockets file -->
+    <!-- <script src="js/sockets.js"></script> -->
+    <script src="js/ajax.js"></script>
+    <script src="js/bucle.js"></script>
+  </body>
+</html>
+
